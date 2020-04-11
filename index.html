@@ -160,7 +160,9 @@
   <div class="modal">
     <div class="modal-dialog">
       <div class="modal-header">
-        <h3 class="modal-title">Корзина</h3>
+        <h3 class="modal-title modal-title-cart">Корзина</h3>
+        <h3 class="modal-title modal-title-delivery">Оформление заказа</h3>
+
         <button class="close">&times;</button>
       </div>
       <div class="modal-body">
@@ -209,6 +211,20 @@
           </div>
         </div>
       </div>
+      <div class="modal-delivery-body">
+        <input type="text" class="input input-address input-address-order" placeholder="Адрес доставки">
+        <input type="text" class="input input-phone input-phone-order" placeholder="Введите номер телефона">
+<div class="payment-wrap">
+  <select class="payment">
+    <option value="">Способ оплаты</option>
+    <option value="1">Наличными курьеру</option>
+    <option value="2">Картой курьеру</option>
+    <option value="3">Картой онлайн</option>
+  </select>
+<input type="text" class="input input-promocode" placeholder="Введите промокод" value="">
+
+</div>
+      </div>
       <div class="modal-footer">
         <div class="total-row">
           <div class="total-item">
@@ -218,10 +234,13 @@
           </div>
         </div>
       <div class="footer-buttons">
-        <button class="button button-primery">Оформить заказ</button>
+        <button class="button button-primery button-order">Оформить заказ</button>
+        <button class="button button-primery button-confirm">Подтвердить</button>
+
         <button class="button">Отмена</button>
       </div>
-      </div>
+      <input class="input input-order-sent" value="Спасибо! Заказ отправлен" disabled></input>
+    </div>
     </div>
   </div>
   <!-- modal -->

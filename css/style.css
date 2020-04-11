@@ -46,6 +46,13 @@ body {
   margin-left: auto;
 }
 
+.input-phone {
+  background-image: url(../img/smartphone.svg);
+  background-size: 18px; 
+  margin-top: 15px;
+  width: 100%;
+}
+
 .buttons {
   display: flex;
   align-items: middle;
@@ -339,6 +346,16 @@ body {
   padding: 40px 45px;
 }
 
+.body-delivery {
+  display: none;
+  max-width: 780px;
+  width: 95%;
+  background: #fff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 40px 45px;
+}
+
 .modal-header {
   display: flex;
   align-items: center;
@@ -353,6 +370,14 @@ body {
   line-height: 42px;
 }
 
+.modal-title-cart {
+  display: none;
+}
+
+.modal-title-delivery {
+  display: block;
+}
+
 .close {
   font-size: 36px;
   border: none;
@@ -360,8 +385,14 @@ body {
 }
 
 .modal-body {
+  display: none;
   margin-bottom: 20px;
 }
+
+.modal-delivery-body {
+  margin-bottom: 20px; 
+}
+
 
 .food-row {
   display: flex;
@@ -431,6 +462,42 @@ body {
   color: #000;
 }
 
+.input-address-order {
+  width: 100%;
+}
+
+.payment-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.payment {
+  /* height: 40px; */
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+}
+
+.input-promocode {
+  padding: 8px;
+  height: 40px;
+}
+
+.input-order-sent {
+  border: none;
+  text-align: center;
+  color: rgb(0, 116, 10);
+  font-size: 24px;
+  padding: 8px 8px;
+  width: 100%;
+}
+
 .modal-footer {
   display: flex;
   flex-direction: column;
@@ -441,6 +508,14 @@ body {
 .footer-buttons {
   display: flex;
   align-items: center;
+}
+
+.button-order {
+  display: none;
+}
+
+.button-confirm {
+  display: block;
 }
 
 .total-row {
