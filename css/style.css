@@ -204,6 +204,12 @@ body {
   align-items: center;
 }
 
+.card-info-rest {
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+  }
+
 .card-price-bold {
   font-style: normal;
 font-weight: bold;
@@ -409,7 +415,7 @@ color: #000000;
   .card-info {
     display: flex;
     align-items: start;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .price:after {
