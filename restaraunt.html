@@ -34,7 +34,7 @@
       <div class="section-heading">
         <div class="section-title">Пицерия</div>
         <div class="card-info-rest">
-              <div class="rating"><img src="img/rating.svg" alt="rating" class="rating-star">4.5</div>
+              <div class="rating-rest"><img src="img/rating.svg" alt="rating" class="rating-star">4.5</div>
               <div class="price">от 700₽</div>
               <div class="category">Пицца</div>
             </div>
@@ -197,8 +197,10 @@
           <strong class="food-price">250₽</strong>
           <div class="food-counter">
             <button class="counter-button">-</button>
-            <span class="counter">1</span>
+            <input class="counter" placeholder="0" value="" disabled></input>
             <button class="counter-button">+</button>
+            <input type="text" class="quantity" placeholder="0" disabled>
+            <span class="currency">₽</span>
           </div>
         </div>
         <div class="food-row">
@@ -206,8 +208,10 @@
           <strong class="food-price">250₽</strong>
           <div class="food-counter">
             <button class="counter-button">-</button>
-            <span class="counter">1</span>
+            <input class="counter" placeholder="0" value="" disabled></input>
             <button class="counter-button">+</button>
+            <input type="text" class="quantity" placeholder="0" disabled>
+            <span class="currency">₽</span>
           </div>
         </div>
         <div class="food-row">
@@ -215,8 +219,10 @@
           <strong class="food-price">250₽</strong>
           <div class="food-counter">
             <button class="counter-button">-</button>
-            <span class="counter">1</span>
+            <input class="counter" placeholder="0" value="" disabled></input>
             <button class="counter-button">+</button>
+            <input type="text" class="quantity" placeholder="0" disabled>
+            <span class="currency">₽</span>
           </div>
         </div>
         <div class="food-row">
@@ -224,31 +230,21 @@
           <strong class="food-price">250₽</strong>
           <div class="food-counter">
             <button class="counter-button">-</button>
-            <span class="counter">1</span>
+            <input class="counter" placeholder="0" value="" disabled></input>
             <button class="counter-button">+</button>
-          </div>
-        </div>
-        <div class="food-row">
-          <span class="food-name">Маргарита</span>
-          <strong class="food-price">250₽</strong>
-          <div class="food-counter">
-            <button class="counter-button">-</button>
-            <span class="counter">1</span>
-            <button class="counter-button">+</button>
-          </div>
-        </div>
-        <div class="food-row">
-          <span class="food-name">Маргарита</span>
-          <strong class="food-price">250₽</strong>
-          <div class="food-counter">
-            <button class="counter-button">-</button>
-            <span class="counter">1</span>
-            <button class="counter-button">+</button>
+            <input type="text" class="quantity" placeholder="0" disabled>
+            <span class="currency">₽</span>
           </div>
         </div>
       </div>
       <div class="modal-footer">
-        <span class="modal-pricetag">1250₽</span>
+        <div class="total-row">
+          <div class="total-item">
+            <div class="text-currency">Итого:</div>
+            <input class="total-price" placeholder="0" value="" disabled></input>
+          <span class="total-currency">₽</span>
+          </div>
+        </div>
       <div class="footer-buttons">
         <button class="button button-primery">Оформить заказ</button>
         <button class="button">Отмена</button>
