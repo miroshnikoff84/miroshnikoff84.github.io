@@ -409,11 +409,15 @@ color: #000000;
   .card-info {
     display: flex;
     align-items: start;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .price:after {
     display: none;
+  }
+
+  .ingredients {
+    height: 140px;
   }
 
 }
