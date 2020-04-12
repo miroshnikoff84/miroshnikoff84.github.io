@@ -53,6 +53,13 @@ body {
   width: 100%;
 }
 
+.input-comment {
+  background-image: url(../img/comment.svg);
+  background-size: 18px; 
+  margin-top: 15px;
+  width: 100%;
+}
+
 .buttons {
   display: flex;
   align-items: middle;
@@ -853,13 +860,84 @@ body {
     width: 250px;
     margin: 0 auto;
   }
-
+  /* MODAL */
+  .payment-wrap {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+  }
+  .payment {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .input-promocode {
+    width: 194px;
+  }
 }
 
 @media (max-width: 320px) {
   .total-row {
     justify-content: space-between;
   }
+}
+
+/* adapt on height */
+
+@media (max-height: 812px) {
+  .modal-dialog {
+    padding: 10px 25px;
+  }
+  .modal-header {
+    margin-bottom: 14px;
+  }
+  .modal-title {
+    font-size: 20px;
+  }
+  .input-order-sent {
+    font-size: 16px;
+  }
+}
+
+@media (max-height: 414px) {
+  .modal-header {
+    margin-bottom: 0;
+  }
+  .input {
+    margin-top: 10px;
+    padding: 5px 5px 5px 35px;
+    /* border-bottom: 2px solid #60c4fd; */
+  }
+  .payment-wrap {
+    margin-top: 2px;
+  }
+}
+
+@media (max-height: 375px) {
+  .modal-header {
+    margin-bottom: 0;
+  }
+  .input {
+    margin-top: 2px;
+    padding: 5px 5px 5px 35px;
+    /* border-bottom: 2px solid #60c4fd; */
+  }
+  .payment-wrap {
+    margin-top: 2px;
+  }
+  .modal-delivery-body{
+    margin-bottom: 2px;
+  }
+  .text-currency {
+    font-size: 22px;
+  }
+  .total-price {
+    font-size: 22px;
+  }
+  .total-currency {
+    font-size: 22px;
+  }
+
 }
 
 
