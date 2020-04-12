@@ -378,11 +378,11 @@ body {
 }
 
 .modal-title-cart {
-  display: none;
+  display: block;
 }
 
 .modal-title-delivery {
-  display: block;
+  display: none;
 }
 
 .close {
@@ -392,11 +392,13 @@ body {
 }
 
 .modal-body {
-  display: none;
+  display: block;
   margin-bottom: 20px;
 }
 
 .modal-delivery-body {
+  display: none;
+  flex-direction: column;
   margin-bottom: 20px; 
 }
 
@@ -497,6 +499,7 @@ body {
 }
 
 .input-order-sent {
+  display: none;
   border: none;
   text-align: center;
   color: rgb(0, 116, 10);
@@ -518,11 +521,15 @@ body {
 }
 
 .button-order {
-  display: none;
+  display: block;
 }
 
 .button-confirm {
-  display: block;
+  display: none;
+}
+
+.button-back {
+  display: none;
 }
 
 .total-row {
