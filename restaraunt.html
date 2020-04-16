@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <header class="header">
-      <a href="https://miroshnikoff84.github.io/index.html" class="logo animated bounce">
+      <a href="index.html" class="logo animated bounce">
         <img src="img/logo.svg" alt="logo">
       </a>
       <input type="text" class="input input-address" placeholder="Адрес доставки">
@@ -51,11 +51,11 @@
               
             </div>
             <div class="card-buttons">
-              <button class="button button-primery">
+              <button class="button button-primery button-card">
                 <span class="button-card-text">В корзину</span>
                 <img src="img/shopping-kart-white.svg" alt="shopping-kart" class="button-card-image">
               </button>
-              <strong class="card-price-bold">250₽</strong>
+              <input class="card-price-bold" value="250" disabled>₽</input>
             </div>
           </div>
         </div>
@@ -71,11 +71,11 @@
               <div class="ingredients">Шампиньоны, пепперони, сыр моцарелла, сыр Чеддер</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primery">
+              <button class="button button-primery button-card">
                 <span class="button-card-text">В корзину</span>
                 <img src="img/shopping-kart-white.svg" alt="shopping-kart" class="button-card-image">
               </button>
-              <strong class="card-price-bold">250₽</strong>
+              <input class="card-price-bold" value="250" disabled>₽</input>
             </div>
           </div>
         </div>
@@ -91,11 +91,11 @@
               <div class="ingredients">Соус «Цезарь», сыр «Моцарелла», сыр «Пармезан», куриные грудки, салат «Айсберг», помидоры «Черри», гренки</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primery">
+              <button class="button button-primery button-card">
                 <span class="button-card-text">В корзину</span>
                 <img src="img/shopping-kart-white.svg" alt="shopping-kart" class="button-card-image">
               </button>
-              <strong class="card-price-bold">250₽</strong>
+              <input class="card-price-bold" value="250" disabled>₽</input>
             </div>
           </div>
         </div>
@@ -111,11 +111,11 @@
              <div class="ingredients">Ветчина, яйцо куриное, сыр моцарелла, грудинка, сыр чеддер, помидоры</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primery">
+              <button class="button button-primery button-card">
                 <span class="button-card-text">В корзину</span>
                 <img src="img/shopping-kart-white.svg" alt="shopping-kart" class="button-card-image">
               </button>
-              <strong class="card-price-bold">250₽</strong>
+              <input class="card-price-bold" value="250" disabled>₽</input>
             </div>
           </div>
         </div>
@@ -131,11 +131,11 @@
              <div class="ingredients">Помидоры, пицца-соус, сыр моцарелла</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primery">
+              <button class="button button-primery button-card">
                 <span class="button-card-text">В корзину</span>
                 <img src="img/shopping-kart-white.svg" alt="shopping-kart" class="button-card-image">
               </button>
-              <strong class="card-price-bold">250₽</strong>
+              <input class="card-price-bold" value="250" disabled>₽</input>
             </div>
           </div>
         </div>
@@ -151,11 +151,11 @@
               <div class="ingredients">Куриные грудки, тесто дрожжевое, шпинат, томаты виноградные, сыр пармезан, сыр моцарелла, перец красный хлопьями, сливки, чеснок</div>
             </div>
             <div class="card-buttons">
-              <button class="button button-primery">
+              <button class="button button-primery button-card">
                 <span class="button-card-text">В корзину</span>
                 <img src="img/shopping-kart-white.svg" alt="shopping-kart" class="button-card-image">
               </button>
-              <strong class="card-price-bold">250₽</strong>
+              <input class="card-price-bold" value="250" disabled>₽</input>
             </div>
           </div>
         </div>
@@ -185,10 +185,12 @@
     </footer>
 
   </div>
-   <div class="modal">
+  <div class="modal">
     <div class="modal-dialog">
       <div class="modal-header">
-        <h3 class="modal-title">Корзина</h3>
+        <h3 class="modal-title modal-title-cart">Корзина</h3>
+        <h3 class="modal-title modal-title-delivery">Оформление заказа</h3>
+
         <button class="close">&times;</button>
       </div>
       <div class="modal-body">
@@ -237,6 +239,22 @@
           </div>
         </div>
       </div>
+      <div class="modal-delivery-body">
+        <input type="text" class="input input-address input-address-order" placeholder="Адрес доставки">
+        <input type="tel" class="input input-phone input-phone-order" placeholder="Введите номер телефона">
+        <input type="text" class="input input-comment input-comment-order" placeholder="Комметарий к заказу">
+
+<div class="payment-wrap">
+  <select class="payment">
+    <option value="">Способ оплаты</option>
+    <option value="1">Наличными курьеру</option>
+    <option value="2">Картой курьеру</option>
+    <option value="3">Картой онлайн</option>
+  </select>
+<input type="text" class="input input-promocode" placeholder="Введите промокод" value="">
+
+</div>
+      </div>
       <div class="modal-footer">
         <div class="total-row">
           <div class="total-item">
@@ -246,10 +264,14 @@
           </div>
         </div>
       <div class="footer-buttons">
-        <button class="button button-primery">Оформить заказ</button>
-        <button class="button">Отмена</button>
+        <button class="button button-primery button-order">Оформить заказ</button>
+        <button class="button button-primery button-confirm">Подтвердить</button>
+
+        <button class="button button-cancel">Отмена</button>
+        <button class="button button-back">Назад</button>
       </div>
-      </div>
+      <input class="input input-order-sent" value="Спасибо! Ваш заказ отправлен" disabled></input>
+    </div>
     </div>
   </div>
   <!-- modal -->

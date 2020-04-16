@@ -239,12 +239,16 @@ body {
 }
 
 .card-price-bold {
+  width: 50px;
+  border: none;
+  text-align: right;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 32px;
   margin-left: 20px;
   color: #000000;
+  background: transparent;
 
 }
 

@@ -54,8 +54,13 @@
 };
 openCart();
 
+let data = JSON.parse("goods");
+console.log(data);
   
 
   // new WOW().init();
 
+// const loadGoods = (data) => {
 
+
+// }
